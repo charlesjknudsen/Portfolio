@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "title": "Part I: The Apocalypse",
+        "author_first": "Benjamin",
+        "author_last": "Holguin",
+        "file": "BHolguin",
+
+        "month": "11",
+        "day": "23",
+        "year": "2025"
+    },
+    {
+        "id": 2,
+        "title": "Yonder Stands Your Orphan",
+        "author_first": "Midge",
+        "author_last": "Mann",
+        "file": "post2",
+
+        "month": "08",
+        "day": "20",
+        "year": "2011"
+    },
+    {
+        "id": 3,
+        "title": "Blah Bloo",
+        "author_first": "James",
+        "author_last": "Franko-DillWinger",
+        "file": "blah_bloo",
+
+        "month": "11",
+        "day": "20",
+        "year": "2025"
+    },
+    {
+        "id": 4,
+        "title": "Morning Star",
+        "author_first": "Throne",
+        "author_last": "Iron",
+        "file": "morningStar",
+
+        "month": "12",
+        "day": "25",
+        "year": "1966"
+    }
+]

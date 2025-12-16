@@ -1,0 +1,421 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* POSTS CSS */
+
+.SideBar {
+  position: absolute;
+  top: 30px; /* make room for nav bar */
+
+  height: calc(100vh - 30px);
+  width: 250px;
+  background-color: #2f4050;
+}
+
+.SideBarContainer {
+  position: relative;
+
+  height: auto;
+  width: 100%;
+
+  margin-left: 10px;
+  padding: 0;
+}
+
+.SideBarContainer .SideBarRow {
+  width: 99%;
+  height: 50px;
+  border: 1px solid black;
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.SideBarYear {
+  width: 70%;
+  height: 40px;
+
+  color: white;
+  border-bottom: 0.5px solid white;
+  font-size: 2em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.SideBarPost {
+  width: 90%;
+  height: auto;
+
+  display: list-item;
+  list-style-type: square;
+  list-style-position: inside;
+  padding: 2px;
+
+  color: white;
+  font-size: 1em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.SideBarPost:hover {
+  text-decoration: underline;
+}
+
+/* --- */
+
+.searchContainer {
+  position: realtive;
+
+  display: flex;
+
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  margin-left: 10px;
+
+  align-items: center;
+}
+
+.search {
+  border-radius: 12px;
+
+  color: black;
+  background-color: white;
+}
+
+/* --- */
+
+.TopBar {
+  position: absolute;
+  top: 30px; /* make room for navbar */
+  left: 250px; /* offsets from the sidebar */
+  height: 70px;
+  width: calc(100vw - 250px);
+  background-color: #2f4050;
+}
+
+.TopBarContainer {
+  display: flex;
+
+  height: 100%;
+
+  color: white;
+  justify-content: left;
+  align-items: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* --- */
+
+.CenterText {
+  position: absolute;
+  right: 250px;
+  left: 250px;
+  top: 100px;
+  bottom: 100px;
+
+  margin: 20px;
+
+  border: 1px solid black;
+
+  height: calc(100vh - 200px);
+  width: calc(100vw - 300px);
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.CenterTextContainer {
+
+  height: 100%;
+  width: 100%;
+
+  box-sizing: border-box;
+  padding: 1rem;
+
+  color: #000;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  display: flex;
+
+  justify-content: center;
+}
+
+/* --- */
+
+.buttonContainer {
+  position: absolute;
+  right: 250px;
+  left: 250px;
+  top: calc(100vh - 75px);
+  bottom: 75px;
+  margin: 20px; /* position right below center text */
+
+  height: 25px;
+  width: calc(100vw - 300px);
+
+  display: inline-block;
+
+}
+
+.previous {
+  float: left;
+}
+
+.next {
+  float: right;
+}
+
+/* --- */
+
+.controlButtons {
+  position: absolute;
+  top: calc(100vh - 21px - 30px); /* 21 because of 1px border, 30 because of top displacement */
+  width: 250px;
+}
+
+/* HOME CSS */
+
+.home {
+  display: flex;
+
+  width: 100%;
+  height: 20px;
+
+  box-sizing: border-box;
+  border: 1px solid white;
+  color: #FFF;
+
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navBarContainer{
+  position: relative;
+  height: 30px;
+  width: 100vw;
+
+  background-color: #2f4050;
+
+  border-bottom: 1px solid white;
+
+  z-index: 999; /* so that it overlays always on top */
+}
+
+.navBar {
+  display: flex;
+
+  height: 100%;
+
+  color: white;
+  justify-content: left;
+  align-items: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navBar_btn {
+  display: flex;
+
+  color: white;
+  align-items: center;
+  justify-content: center;
+
+  width: 5%;
+  height: 100%;
+
+  border-right: 0.2px solid white;
+
+  font-size: clamp(0.2rem, 2.5vw, 1rem);
+
+  overflow: hidden;
+}
+
+.navBar_signIn {
+  position: absolute;
+  right: 0;
+
+  display: flex;
+
+  color: white;
+  align-items: center;
+  justify-content: center;
+
+  width: 5%;
+  height: 100%;
+
+  border-left: 0.2px solid white;
+  background-color: 	#4de13f;
+
+  font-size: clamp(0rem, 2.5vw, 1rem);
+
+  overflow: hidden;
+}
+
+/* --- */
+
+.footerContainer {
+  position: absolute;
+  height: 30px;
+  width: 100vw;
+
+  bottom: 0.1px;
+  background-color: #2f4050;
+
+}
+
+.footer {
+  display: flex;
+
+  height: 100%;
+
+  color: white;
+  justify-content: left;
+  align-items: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.footer_item {
+  display: flex;
+
+  color: white;
+  align-items: center;
+  justify-content: center;
+
+  width: auto;
+  height: 100%;
+
+  padding-left: 4px;
+  padding-right: 4px;
+
+  font-weight: bold;
+
+  border-right: 0.2px solid white;
+
+  font-size: clamp(0.2rem, 2.5vw, 0.8rem);
+
+  overflow: hidden;
+}
+
+.footer_btn {
+  display: flex;
+
+  color: white;
+  align-items: center;
+  justify-content: center;
+
+  width: auto;
+  height: 100%;
+
+  padding-left: 4px;
+  padding-right: 4px;
+
+  border-right: 0.2px solid white;
+
+  font-size: clamp(0.2rem, 2.5vw, 0.8rem);
+
+  overflow: hidden;
+}
+
+/* --- */
+
+.introContainer {
+  position: relative;
+  display: flex;
+
+  align-items: center;
+
+  height: 30vh;
+  width: calc(100vw - 1px);
+
+  border: 1px solid black;
+}
+
+.intro_txt {
+
+  position: relative;
+
+  width: 80%;
+  height: 80%;
+
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.intro_pic {
+
+  position: relative;
+  right: 0;
+
+  width: 20%;
+  height: 80%;
+
+  margin: 10px;
+  border: 1px solid black;
+}
+
+/* --- */
+
+.featureContainer {
+  position: relative;
+  
+  display: flex;
+  align-items: center;
+
+  /* total height - (nav bar + intro) - footer */
+  height: calc( 100vh - (30px + 30vh) - 30px);
+  width: calc(100vw - 1px);
+
+  border: 1px solid black;
+}
+
+.feature_pic {
+
+  position: relative;
+
+  width: 40%;
+  height: 80%;
+
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.feature_txt {
+
+  position: relative;
+  right: 0;
+
+  width: 50%;
+  height: 80%;
+
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.feature_nav {
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 5%;
+  height: 20%;
+
+  margin: 10px;
+
+  border: 1px solid black;
+}
